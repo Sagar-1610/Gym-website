@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/enquiry.css">
+</head>
+<body>
+    <div class="form-control2">
+        <form method="POST">
+            {% csrf_token %}
+            <div class="bmi">
+                <label>MEMBERSHIP FORM</label>
+            </div>
+            <br>
+            <br>
+            {{n}}
+            <br>
+            <div class="gender">
+                <label>SELECT YOUR GENDER</label><br>
+                <select name="gender" required>
+                    <option> </option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="h-cal">
+                <label>Name</label> 
+                <br>
+                <input type="text" name="name" required>
+                <br>
+                <label>Phone</label>
+                <br>
+                <input type="text" name="phone" required>
+                <br>
+                <label>Email</label>
+                <br>
+                <input type="email" name="email" required>
+                <br>
+                <label >Age</label>
+                <br>
+                <input type="text" name="age" required>
+                <br>
+                <label >City</label>
+                <br>
+                <input type="text" name="city" required>
+                
+            </div>
+            <div class="cal">
+                <br/>
+                <label>Our Packages</label><br/>
+                <select name='packages' required>
+                    <option value=""></option>
+                    <option value="Platinum">Platinum</option>
+                    <option value="Gold">Gold</option>
+                    <option value="Silver">Silver</option>
+                    <option value="Bronze">Bronze</option>
+                </select>
+            </div >
+            <br/>
+            <button type="submit" class="btn btn-primary">Submit now</button>
+        </form>
+</body>
+</html>
+{% endblock  %}

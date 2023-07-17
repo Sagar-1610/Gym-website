@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>BMI</title>
+    <link  rel="stylesheet" type="text/css" href="/static/css/Bmi.css"/>
+</head>
+<body>
+  <div class="form-control2">
+    <form method="POST">
+        {% csrf_token %}
+        <div class="bmi">
+            <label>BMI CALCULATOR</label>
+        </div>
+        <div class="gender">
+            <label>SELECT YOUR GENDER</label><br/>
+            <select>
+                <option> </option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+        </div>
+        <div class="h-cal">
+            <br/>
+            <label>ENTER YOUR HEIGHT (feets:inches)</label><br/>
+            <input type="text" name="feet"/>
+            <input type="text" name="inches"/>
+        </div>
+        <div class="w-cal">
+            <br/>
+            <label>ENTER YOUR WEIGHT (kg)</label><br/>
+            <input type="text" name="weight"/>
+        </div >
+        <br/>
+        <button type="submit" class="btn btn-primary">CALCULATE NOW</button>
+        <div class="o-cal">
+            <br/>
+            <label>YOUR CALCULATED BMI</label><br/>
+            <input type="text" value='{{f}}'/>
+        </div >
+    </form>
+    <br/>
+    <div class="container-fluid">        
+        <div class="row">
+            <div class="col-3 container4">Underweight<br/><18.5</div>
+            <div class="col-3 container1">Normal weight<br/>18.5-25</div>
+            <div class="col-3 container2">Overweight<br/>25-30</div>
+            <div class="col-3 container3">Obese<br/>>30</div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
+  
+{% endblock %}
