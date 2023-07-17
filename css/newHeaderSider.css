@@ -1,0 +1,112 @@
+.main{
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);   
+    width:1270px;
+    
+}
+.shop{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    
+}
+.shop label{
+ font-size: x-large; 
+ font-weight: 1000;
+ color:black;
+ margin-bottom: 15px;
+ text-decoration:underline;
+ margin-left: 458px; 
+}
+.flower,.set,.rise{
+ height:300px;
+ width:20%;
+}
+.lily,.gold,.rose{
+    height:300px;
+    width:20%;   
+    margin-top: 110px;
+}
+.lily,.gold,.set,.rise{
+    margin-left:140px;
+}
+
+.set img,.rise img,.flower img,.lily img,.gold img,.rose img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius:4px;
+    border:solid black 2px;
+}
+.about{
+    color:black;
+    font-size: larger;
+    font-weight: 1000;
+  
+}
+.flower label,.set label,.rise label,.flower label,.lily label,.gold label,.rose label{
+    font-size: large;
+    font-weight:900;
+    color:black;
+}
+.set p,.rise p,.flower p,.lily p,.gold p,.rose p{
+    font-size: medium;
+    font-weight:900;
+    color:black;
+}
+
+.gold,.lily,.rose{
+    margin-bottom: 100px;
+}
+
+@media(max-width:768px){
+    .main{
+         width: 375px;
+    }
+    .shop{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .shop label{
+     font-size: 16px;
+     margin-bottom: 10px;
+     margin-left: 80px;  
+     
+    }
+    
+    .flower,.set,.rise{
+     height:150px;
+    
+    }
+    
+    .lily,.gold,.rose{
+        height: 150px;
+        margin-top: 50px;
+    }
+    .lily,.gold,.java,.mojo,.react,.jquery,.side-upper,.side-bottom,.top,.side-middle,.set,.rise{
+        margin-left:38px;
+       
+    }   
+    .flower label,.set label,.rise label,.lily label,.gold label,.rose label{
+        font-size: 10px;
+      
+    }
+    .flower p,.set p,.rise p,.lily p,.gold p,.rose p{
+        font-size:8px;
+      
+    }   
+}
+
+@media(min-width:769px) and (max-width:1023px){
+    .shop label{
+        font-size:36px;
+        margin-left: 380px;    
+    }
+    .flower label,.set label,.rise label,.lily label,.gold label,.rose label{
+        font-size: 20px;
+      
+    }
+    .flower p,.set p,.rise p,.lily p,.gold p,.rose p{
+        font-size:20px;
+      
+    } 
+    
+}

@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap);
+*{
+    font-family:'Poppins', sans-serif;
+    
+} 
+.Navbar_up{
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(1,78,117,1) 2%, rgba(0,212,255,1) 80%);
+    color:white;
+    height:110px; 
+}
+.Tim{
+    padding:10px;
+    justify-content: space-between;
+    text-decoration: none;
+    font-size:xx-large;
+    font-weight:1000;
+    display:block;
+}
+#braun{
+    color:black;
+}
+#trainer{
+font-size:x-small;
+font-weight: 500;
+
+}
+.services{
+    position:absolute;
+    right:17px;
+    top:60px;
+}
+.services p{
+    display:inline;
+    flex-direction: row;
+    
+}
+.services p a{
+    color:white;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: small;
+    padding:17px;
+    
+    
+}
+.services p a:hover{
+    color:gold;
+    
+}
+
+
+
+.uperheader_up{
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(1,78,117,1) 2%, rgba(0,212,255,1) 80%);
+    font-size: xx-small;
+    color:white;
+    height: 15px;
+}
+#faqs{
+    
+    font-weight:900;
+    padding:10px;
+  
+    
+}
+#faqs1{
+    margin-left: 25px;
+}
+#call{
+    
+    position:absolute;
+    right:35px;
+    top:12px;
+    font-weight: 900;
+}
+#call1{
+    color:royalblue;
+    font-weight: 900;
+    
+}
+@media(max-width:768px){
+    .Navbar_up{
+        height: 80px;        
+        font-size: 15px;
+        width:auto;
+    }
+    .Tim{
+        font-size:21px;
+        padding: 2px;
+    }
+    .services{
+        font-size:5px; 
+    }
+    .services p a{
+        font-size: 8px;
+        padding:2px;
+        
+    }   
+    .uperheader_up{
+    font-size:5px; 
+    }
+    #faqs{
+    
+   
+        padding:0px;
+      
+        
+    }
+}
+@media (min-width:769px)and(max-width:980px){
+    .Tim{
+        font-size:30px;
+        padding: 2px;
+    }   
+}

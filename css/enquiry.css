@@ -1,0 +1,121 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap);
+*{
+    font-family:'Poppins', sans-serif;
+    
+} 
+*{
+   
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+.form-control2{
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+ text-align: center;  
+ color:black;
+ padding:15px;
+}
+.bmi{
+    font-size: x-large;
+    font-weight: 1000;
+}
+
+
+.gender{
+    text-align: center;
+    font-size: larger;
+    font-weight:500 ;
+    justify-content: space-between;
+    margin-top: 50px;
+    
+    
+}
+.cal{
+    text-align: center;
+    font-size: larger;
+    font-weight:500 ;
+    justify-content: space-between;
+
+}
+.gender label,.cal label{
+    font-size: small;
+    font-weight: 500;
+}
+.gender select,.cal select{
+    width:250px;
+    font-size:10px;
+    
+}
+
+.h-cal label{
+    font-size:small;
+    font-weight: 500;
+}
+.h-cal input{
+    width:250px;
+    font-size:10px;
+    
+    
+}
+.w-cal label{
+    font-size:small;
+    font-weight: 500;
+}
+.w-cal input{
+    width:250px;
+    font-size:10px;   
+}
+
+@media(max-width:768px){
+    .form-control2{
+        display:block;
+        font-size: 25px;
+        width:auto;
+    }
+
+    
+    .bmi{
+    font-size:28px;
+
+    }
+
+    .gender label{
+    font-size: 20px;
+    }
+  
+
+    .h-cal label{
+    font-size:20px;
+    
+    }
+  
+    .w-cal label{
+    font-size:20px;
+
+    }
+  
+    .cal label{
+    font-size:20px;
+    }
+    
+
+
+    .big-container{
+    font-size: xx-small;   
+    display:flex;
+    width:auto;  
+}
+.container{
+    width:auto;  
+}
+.container1{
+    width:auto;
+}
+.container2{
+    width:auto;
+}
+.container3{
+    width:auto;
+}
+}
