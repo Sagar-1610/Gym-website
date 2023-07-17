@@ -54,4 +54,4 @@ def Calculator(request):
             f=('%.2f' % d)
     except:
         pass
-    return render(request,'bmi.html',{'f':f})
+    return render(request,'Bmi.html',{'f':f})
