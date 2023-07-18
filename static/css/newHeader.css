@@ -76,11 +76,25 @@
     } 
 }
 
-@media(min-width:770px) and(max-width:990px){
+@media screen and (min-width:769px) and (max-width:1024px){
     .Header{
+        width:914px;
+        height:1200px;
        
-        height:800px;
     }
+    #transform{
+        font-size:50px;
+        
+    }
+    .header_up1{
+        width:30%;
+        position:absolute;
+        top:20%;
+        left:42%;   
+    }
+    .btn{  
+        font-size:25px;   
+    } 
     
    
 }

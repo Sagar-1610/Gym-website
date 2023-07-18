@@ -14,7 +14,7 @@
 .lfooter img{
     position: absolute;
     right:44%;
-    top:200px;
+    top:100px;
     height:150px;
     width:150px;
     border:solid black 2px;
@@ -39,7 +39,7 @@
     box-sizing: border-box;
     color:black;   
 }
-@media(max-width:768px){
+@media screen and (max-width:768px){
 
     .lfooter{
         display:block;
@@ -60,11 +60,11 @@
     }
     .lfooter img{
         position: absolute;
-        top:160px;
+        top:120px;
         right:110px;
     }      
 }
-@media(min-width:769px) and (max-width:1024px){
+@media screen and (min-width:769px) and (max-width:1024px){
     .lfooter{
         display:block;
         height:1260px;
@@ -80,5 +80,10 @@
         text-align: justify;
         font-size: 15px;
     }
+    .lfooter img{
+        position: absolute;
+        top:130px;
+        right:340px;
+    }  
       
 }

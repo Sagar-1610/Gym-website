@@ -36,7 +36,7 @@
     font-weight: 500;
 }
 .gender select{
-    width:250px;
+    width:350px;
     font-size:10px;
     
 }
@@ -93,7 +93,7 @@
     background-color:royalblue;
     padding:8px;
 }
-@media(max-width:768px){
+@media screen and (max-width:768px){
     .form-control2{
        
         font-size: 25px;
